@@ -198,7 +198,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="mt-4">
-                  <img src="https://i.imgur.com/9Qm4YQG.png" alt="LIPA NA M-PESA" className="w-36 rounded-md shadow-sm" />
+                  <img src="logo.png" alt="LIPA NA M-PESA" className="w-36 rounded-md shadow-sm" />
                 </div>
               </div>
             </div>

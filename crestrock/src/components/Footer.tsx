@@ -36,13 +36,13 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-semibold mb-3">Contact</h4>
             <p className="text-sm">Phone: <a className="text-gray-300 hover:text-white" href="tel:+254742-312-545">+254742-312-545</a></p>
-            <p className="text-sm mt-2">Email: <a className="text-gray-300 hover:text-white" href="mailto:info@gadgetsbycrestrock.co.ke">info@gadgetsbycrestrock.co.ke</a></p>
+            <p className="text-sm mt-2">Email: <a className="text-gray-300 hover:text-white" href="mailto:info@shop.gadgets.crestrock.ltd">info@shop.gadgets.crestrock.ltd</a></p>
             <p className="text-sm mt-4">Kenya</p>
           </div>
         </div>
 
         <div className="mt-8 border-t border-gray-800 pt-6 text-center text-sm text-gray-400">
-          © 2025 gadgetsbycrestrock — All rights reserved.
+          © {new Date().getFullYear()} gadgetsbycrestrock — All rights reserved.
         </div>
       </div>
     </footer>
