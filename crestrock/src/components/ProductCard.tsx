@@ -63,6 +63,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             src={product.image}
             alt={product.name}
             className="w-full h-full object-contain p-8 transition-transform duration-300 group-hover:scale-110"
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = 'https://via.placeholder.com/150';
+            }}
           />
           
           {/* Hover Overlay */}

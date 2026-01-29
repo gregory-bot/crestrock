@@ -114,9 +114,15 @@ class FirebaseService {
         const data = snapshot.val();
         if (data) {
           const productsArray = Object.values(data) as Product[];
-          const filteredProducts = productsArray.filter(product => 
-            product.brand.toLowerCase() === brand.toLowerCase()
-          );
+          const filteredProducts = productsArray.filter(product => {
+            // Defensive: ensure both product.brand and brand are defined and strings
+            if (!product.brand || !brand) return false;
+            return (
+              typeof product.brand === 'string' &&
+              typeof brand === 'string' &&
+              product.brand.toLowerCase() === brand.toLowerCase()
+            );
+          });
           resolve(filteredProducts);
         } else {
           resolve([]);
